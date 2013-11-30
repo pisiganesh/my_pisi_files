@@ -32,7 +32,7 @@ One of Sayonara's goals are intuitive and easy usablility never leading to the i
     <History>
         <Update release="1">
             <Date>2013-11-28</Date>
-            <Version>695</Version>
+            <Version>0.4.0</Version>
             <Comment>Sayonara is a small, clear and fast audio player for Linux </Comment>
             <Name>Ganesh</Name>
             <Email>iyer.gb.linux@gmail.com</Email>
