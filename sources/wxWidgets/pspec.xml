@@ -1,0 +1,38 @@
+<PISI>
+    <Source>
+        <Name>wxWidgets</Name>
+        <Homepage>http://www.wxwidgets.org/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>LGPL</License>
+        <PartOf>programming.environment</PartOf>
+        <Summary>Cross Platform GUI library</Summary>
+        <Description>wxWidgets is a C++ library that lets developers create applications for Windows, OS X, Linux and UNIX on 32-bit and 64-bit architectures as well as several mobile platforms including Windows Mobile, iPhone SDK and embedded GTK+. It has popular language bindings for Python, Perl, Ruby and many other languages. Unlike other cross-platform toolkits, wxWidgets gives its applications a truly native look and feel because it uses the platform's native API rather than emulating the GUI. It's also extensive, free, open-source and mature.</Description>
+        <BuildDependencies>
+            <Dependency>gcc</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
+            <Dependency>libSM-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="756a9c54d1f411e262f03bacb78ccef085a9880a" type="tarbz2">http://sourceforge.net/projects/wxwindows/files/3.0.0/wxWidgets-3.0.0.tar.bz2</Archive>
+    </Source>
+    <Package>
+        <Name>wxWidgets</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-28</Date>
+            <Version>3.0.0</Version>
+            <Comment>-</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

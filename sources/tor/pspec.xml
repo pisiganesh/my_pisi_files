@@ -1,0 +1,36 @@
+<PISI>
+    <Source>
+        <Name>tor</Name>
+        <Homepage>https://blog.torproject.org/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>The Tor Project</License>
+        <License>Inc.</License>
+        <PartOf>network</PartOf>
+        <Summary>Provide anonymity on the Internet.</Summary>
+        <Description>This file contains the license for Tor, a free software project to provide anonymity on the Internet.</Description>
+        <BuildDependencies>
+            <Dependency>libevent-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="ef02e5b0eb44ab1a5d6108c39bd4e28918de79dc" type="targz">/home/ganesh/pisi_packages/tor/tor-0.2.3.25.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>tor</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-27</Date>
+            <Version>2.3.25</Version>
+            <Comment>https://blog.torproject.org/</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->
