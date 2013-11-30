@@ -1,0 +1,538 @@
+<PISI>
+  <SpecFile>
+    <Source>
+        <Name>Bluefish</Name>
+        <Homepage>http://bluefish.openoffice.nl/index.html</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <PartOf>programming.environment</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Bluefish Editor</Summary>
+        <Description>Bluefish is a powerful editor targeted towards programmers and webdevelopers, with many options to write websites, scripts and programming code. Bluefish supports many programming and markup languages. See features for an extensive overview, take a look at the screenshots, or download it right away. Bluefish is an open source development project, released under the GNU GPL licence.
+
+Bluefish is a multi-platform application that runs on most desktop operating systems including Linux, FreeBSD, MacOS-X, Windows, OpenBSD and Solaris.</Description>
+        <BuildDependencies>
+            <Dependency>enchant</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>gvfs</Dependency>
+            <Dependency>libxml2-devel</Dependency>
+            <Dependency>pcre++-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="b65310617b5fd525a8c57f7681e023f6f4496378" type="tarbz2">http://sourceforge.net/projects/bluefish/files/bluefish/2.2.4/bluefish-2.2.4.tar.bz2</Archive>
+    </Source>
+    <Package>
+        <Name>Bluefish</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-30</Date>
+            <Version>2.2.4</Version>
+            <Comment>Initial Release</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>
+  </SpecFile>
+  <SpecFile>
+    <Source>
+        <Name>freemind</Name>
+        <Homepage>http://freemind.sourceforge.net/wiki/index.php/Main_Page</Homepage>
+        <Packager>
+            <Name>ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <PartOf>office</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Mind Mapping tool</Summary>
+        <Description>FreeMind is a premier free mind-mapping software written in Java. The recent development has hopefully turned it into high productivity tool. We are proud that the operation and navigation of FreeMind is faster than that of MindManager because of one-click "fold / unfold" and "follow link" operations.
+
+So you want to write a completely new metaphysics? Why don't you use FreeMind? You have a tool at hand that remarkably resembles the tray slips of Robert Pirsig, described in his sequel to Zen and the Art of Motorcycle Maintenance called Lila. Do you want to refactor your essays in a similar way you would refactor software? Or do you want to keep personal knowledge base, which is easy to manage? Why don't you try FreeMind? Do you want to prioritize, know where you are, where you've been and where you are heading, as Stephen Covey would advise you? Have you tried FreeMind to keep track of all the things that are needed for that?</Description>
+        <BuildDependencies>
+            <Dependency>ant</Dependency>
+            <Dependency>sun-jdk</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="c968891601c2d04147cb893c6ca908d7f6c7e007" type="targz">http://sourceforge.net/projects/freemind/files/freemind/1.0.0/freemind-src-1.0.0.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>freemind</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/doc/freemind/FM_Key_Mappings_Quick_Guide.pdf" permission="0644" group="root" owner="root">FM_Key_Mappings_Quick_Guide.pdf</AdditionalFile>
+            <AdditionalFile target="/usr/share/applications/freemind.desktop" permission="0644" group="root" owner="root">freemind.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/freemind.svg" permission="0644" group="root" owner="root">freemind.svg</AdditionalFile>
+        </AdditionalFiles>
+        <RuntimeDependencies>
+            <Dependency>sun-jre</Dependency>
+        </RuntimeDependencies>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-29</Date>
+            <Version>1.0.0</Version>
+            <Comment>Initial Build</Comment>
+            <Name>ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>
+  </SpecFile>  
+  <SpecFile>
+    <Source>
+        <Name>idea</Name>
+        <Homepage>http://www.jetbrains.com/idea/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>Apache 2.0 license</License>
+        <PartOf>programming.environment</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>IntelliJ IDEA — The Best Java and Polyglot IDE</Summary>
+        <Description>IntelliJ IDEA 12.1
+------------------------
+JavaFX 2.0
+Android UI designer
+Play framework 2.0
+Spring frameworks
+Java 8
+Faster compiler</Description>
+        <Archive sha1sum="8526226a29c0cee6ebc63e829be3c8bb1136b55a" type="targz">/home/ganesh/pisi_packages/idea/idea-12.1.6.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>idea</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/idea.desktop" permission="0644" group="root" owner="root">idea.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/idea.png" permission="0644" group="root" owner="root">idea.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-30</Date>
+            <Version>12.1.6</Version>
+            <Comment>First Build</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>
+  </SpecFile>
+  <SpecFile>
+    <Source>
+        <Name>luckybackup</Name>
+        <Homepage>http://luckybackup.sourceforge.net/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPL v3</License>
+        <PartOf>system</PartOf>
+        <Summary>A powerful, fast and reliable backup &amp; sync tool</Summary>
+        <Description>The main goal of luckyBackup, as its name states, is the creation of backups of your data.</Description>
+        <BuildDependencies>
+            <Dependency>qt</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="7a436c29a636e359991cd131a5a966e3d4755372" type="targz">http://sourceforge.net/projects/luckybackup/files/0.4.7/source/luckybackup-0.4.7.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>luckybackup</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-28</Date>
+            <Version>0.4.7</Version>
+            <Comment>The main goal of luckyBackup, as its name states, is the creation of backups of your data.</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>    
+  </SpecFile>
+  <SpecFile>
+    <Source>
+        <Name>Meld</Name>
+        <Homepage>http://meldmerge.org/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPL v2</License>
+        <PartOf>programming</PartOf>
+        <Summary>Meld is a visual diff and merge tool.</Summary>
+        <Description>Meld is a visual diff and merge tool targeted at developers. Meld helps you compare files, directories, and version controlled projects. It provides two- and three-way comparison of both files and directories, and has support for many popular version control systems.
+
+Meld helps you review code changes and understand patches. It might even help you to figure out what is going on in that merge you keep avoiding.</Description>
+        <BuildDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>python-pygobject</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="da6e4430ea3e56ec649b53f96c485de13a52627f" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/meld/1.8/meld-1.8.2.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>Meld</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-26</Date>
+            <Version>1.8.2</Version>
+            <Comment>Meld is a visual diff and merge tool</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>    
+  </SpecFile>
+  <SpecFile>
+    <Source>
+        <Name>MyPaint</Name>
+        <Homepage>http://mypaint.intilinux.com/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPLv1</License>
+        <PartOf>multimedia.graphics</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>MyPaint is a fast and easy open-source graphics application for digital painters</Summary>
+        <Description>MyPaint is a fast and easy open-source graphics application for digital painters. It lets you focus on the art instead of the program. You work on your canvas with minimum distractions, bringing up the interface only when you need it.</Description>
+        <BuildDependencies>
+            <Dependency>gtk+extra-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>json-c-devel</Dependency>
+            <Dependency>lcms2-devel</Dependency>
+            <Dependency>libpng-devel</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>python-cairo</Dependency>
+            <Dependency>python-numpy</Dependency>
+            <Dependency>python-pygobject-devel</Dependency>
+            <Dependency>swig</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="9e4f0bc2cee6c369f1a40d7c24435b7c26cc3795" type="tarbz2">http://sourceforge.net/projects/mypaint.mirror/files/mypaint-1.1.0.tar.bz2</Archive>
+    </Source>
+    <Package>
+        <Name>MyPaint</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/mypaint.desktop" permission="0644" group="root" owner="root">mypaint.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/mypaint.svg" permission="0644" group="root" owner="root">mypaint.svg</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-29</Date>
+            <Version>1.1.0</Version>
+            <Comment>Initial Release</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>    
+  </SpecFile>
+  <SpecFile>
+    <Source>
+        <Name>nmapis4</Name>
+        <Homepage>http://www.nmapsi4.org/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GNU GENERAL PUBLIC LICENSE</License>
+        <PartOf>network</PartOf>
+        <Summary>NmapSi4 is a complete Qt4-based Gui</Summary>
+        <Description>NmapSi4 is a complete Qt4-based Gui with the design goals to provide a complete nmap interface for users, in order to manage all option of this power security net scanner and search services vulnerability.
+
+Principal features of nmapsi4:
+----------------------------------------------
+    Traceroute support with nmap.
+    Host Lookup with internal implementation or dig.
+    Search services vulnerabilities with webkit dedicated browser.
+    Full nmap nse support.
+    Search network ips with "Network Discover" tool.
+    Full support for CIDR notation for discover tool. (>= 0.4)
+    Save and reload discovered ip. (>= 0.4)
+    Support for create scan user profile. (>= 0.4 -- new profiler)
+    Host scan with nmap. (new nmap options in profiler for >= 0.4)</Description>
+        <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>qt-webkit</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="185d4b917189c974114603bd806ab4523846fa01" type="tarxz">http://sourceforge.net/projects/nmapsi/files/nmapsi4-0.4/nmapsi4-0.4.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>nmapis4</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-27</Date>
+            <Version>0.4.1</Version>
+            <Comment>NmapSi4 is a complete Qt4-based Gui</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>    
+  </SpecFile>
+  <SpecFile>
+    <Source>
+        <Name>photoqt</Name>
+        <Homepage>http://photoqt.org/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPL v2</License>
+        <PartOf>multimedia.graphics</PartOf>
+        <Summary>PhotoQt is a simple, yet powerful and good looking image viewer,
+written in Qt,</Summary>
+        <Description>PhotoQt is a simple, yet powerful and good looking image viewer, written in Qt, published as open-source, and completely free.</Description>
+        <BuildDependencies>
+            <Dependency>exiv2-devel</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>qt</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="acffcc1ea7465b939b9cafb57b397b726dd05f8f" type="targz">/home/ganesh/pisi_packages/photoqt/photoqt-1.0.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>photoqt</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-28</Date>
+            <Version>1.0</Version>
+            <Comment>Image Viewer</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>    
+  </SpecFile>  
+  <SpecFile>
+    <Source>
+        <Name>qmmp</Name>
+        <Homepage>http://qmmp.ylsoftware.com/index.php</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <PartOf>multimedia.sound</PartOf>
+        <Summary>Audio Player line Winamp</Summary>
+        <Description>This program is an audio-player, written with the help of the Qt library. The user interface is similar to winamp or xmms.</Description>
+        <BuildDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>enca</Dependency>
+            <Dependency>faad2</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>flac</Dependency>
+            <Dependency>gzip</Dependency>
+            <Dependency>libcddb</Dependency>
+            <Dependency>libcdio</Dependency>
+            <Dependency>libcdio-paranoia</Dependency>
+            <Dependency>libmad</Dependency>
+            <Dependency>libmms</Dependency>
+            <Dependency>libmodplug</Dependency>
+            <Dependency>libmpcdec</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>mplayer</Dependency>
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>tar</Dependency>
+            <Dependency>unzip</Dependency>
+            <Dependency>wavpack</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="95d8010fb847da729f574ac10eebb21109705ff1" type="tarbz2">/home/ganesh/pisi_packages/qmmp/qmmp-0.7.3.tar.bz2</Archive>
+    </Source>
+    <Package>
+        <Name>qmmp</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-28</Date>
+            <Version>0.7.3</Version>
+            <Comment>-</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>    
+  </SpecFile>  
+  <SpecFile>
+    <Source>
+        <Name>sayonara</Name>
+        <Homepage>http://sayonara.luciocarreras.de/downloads.html</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GNU GPL v3</License>
+        <PartOf>multimedia</PartOf>
+        <Summary>Sayonara is a small, clear and fast audio player for Linux</Summary>
+        <Description>Sayonara is a small, clear and fast audio player for Linux written in C++, supported by the Qt framework. It uses Gstreamer as audio backend.
+
+Although Sayoanra is considered as a lightweight player, it holds a lot of features to organize even big music collections.
+
+Most of them are known from the bigger and well known ausdio players but the main focus during developing (in contrast to many other players) has been performance, low CPU usage and low memory consumption.
+
+One of Sayonara's goals are intuitive and easy usablility never leading to the impression you are using an unnecessary bloated program. Currently it is only available for Linux.</Description>
+        <BuildDependencies>
+            <Dependency>gst-plugins-base-devel</Dependency>
+            <Dependency>gstreamer-devel</Dependency>
+            <Dependency>taglib-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="1bdcdc9727830cf629cdc729379ed0ea43db8dd3" type="targz">/home/ganesh/pisi_packages/sayonara/sayonara-player-r695.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>sayonara</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-28</Date>
+            <Version>0.4.0</Version>
+            <Comment>Sayonara is a small, clear and fast audio player for Linux </Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>    
+  </SpecFile>  
+  <SpecFile>
+    <Source>
+        <Name>Sqliteman</Name>
+        <Homepage>http://sqliteman.com/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPL v2</License>
+        <PartOf>programming.environment</PartOf>
+        <Summary>Sqlite Databases Made Easy</Summary>
+        <Description>The best developer's and/or admin's GUI tool for Sqlite3 in the world. No joking here (or just a bit only) - it contains the most complete feature set of all tools available.</Description>
+        <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>qscintilla2-devel</Dependency>
+            <Dependency>qt</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="ed8e8bd40dfac2bdc106b5e94182602fd6d6bfeb" type="targz">http://sourceforge.net/projects/sqliteman/files/sqliteman/1.2.2/sqliteman-1.2.2.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>Sqlitemanager</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-26</Date>
+            <Version>1.2.2</Version>
+            <Comment>Sqlite Databases Made Easy</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>    
+  </SpecFile>  
+  <SpecFile>
+    <Source>
+        <Name>tor</Name>
+        <Homepage>https://blog.torproject.org/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>The Tor Project</License>
+        <License>Inc.</License>
+        <PartOf>network</PartOf>
+        <Summary>Provide anonymity on the Internet.</Summary>
+        <Description>This file contains the license for Tor, a free software project to provide anonymity on the Internet.</Description>
+        <BuildDependencies>
+            <Dependency>libevent-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="ef02e5b0eb44ab1a5d6108c39bd4e28918de79dc" type="targz">/home/ganesh/pisi_packages/tor/tor-0.2.3.25.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>tor</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-27</Date>
+            <Version>2.3.25</Version>
+            <Comment>https://blog.torproject.org/</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>    
+  </SpecFile>  
+  <SpecFile>
+    <Source>
+        <Name>xfce4-whiskermenu-plugin</Name>
+        <Homepage>http://gottcode.org/xfce4-whiskermenu-plugin/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <PartOf>desktop.xfce</PartOf>
+        <Summary>Alternate Xfce Menu - Whisker Menu</Summary>
+        <Description>Whisker Menu is an alternate application launcher for Xfce. When you open it you are shown a list of applications you have marked as favorites. You can browse through all of your installed applications by clicking on the category buttons on the side. Top level categories make browsing fast, and simple to switch between. Additionally, Whisker Menu keeps a list of the last ten applications that you’ve launched from it.
+
+Favorites are easy to add and reorder. When browsing through your applications, right-click on any of them and select “Add to Favorites”. Simply drag and drop your favorites list to arrange them to suit your needs. You can remove them at any time from another right-click option.
+
+If you’re not sure exactly where a program is listed, instead of browsing through each category you can simply enter a search term. The search field is focused when opening the menu, so you can just start typing. Application descriptions as well as names are searched, which allows you to find a program by using a general word (such as “browser” to find all web browsers installed on your computer).</Description>
+        <BuildDependencies>
+            <Dependency>exo-devel</Dependency>
+            <Dependency>garcon-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="5bf5cd3f10e3cbaf5f330c2ac3bcef04929a6556" type="tarbz2">/home/ganesh/pisi_packages/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin-1.2.1-src.tar.bz2</Archive>
+    </Source>
+    <Package>
+        <Name>xfce4-whiskermenu-plugin</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-11-28</Date>
+            <Version>1.2.1</Version>
+            <Comment>Whisker Menu Plugin for XFCE4</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>    
+  </SpecFile>  
+</PISI>
