@@ -1,0 +1,36 @@
+<PISI>
+    <Source>
+        <Name>obconf</Name>
+        <Homepage>http://openbox.org/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <PartOf>desktop.misc</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Openbox configuration tool</Summary>
+        <Description>Openbox configuration tool</Description>
+        <BuildDependencies>
+            <Dependency>libglade-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="90638645b53275fda175281a1826c8c4c01746df" type="targz">https://github.com/pisiganesh/my_pisi_files/raw/master/archives/obconf-2.0.4.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>obconf</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-12-01</Date>
+            <Version>2.0.4</Version>
+            <Comment>Openbox configuration tool </Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

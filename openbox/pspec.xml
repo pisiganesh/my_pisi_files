@@ -1,0 +1,40 @@
+<PISI>
+    <Source>
+        <Name>openbox</Name>
+        <Homepage>http://openbox.org/</Homepage>
+        <Packager>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Packager>
+        <License>GPLV2</License>
+        <PartOf>desktop</PartOf>
+        <IsA>app</IsA>
+        <Summary>Openbox is a highly configurable, next generation window manager with extensive standards support.</Summary>
+        <Description>Openbox is a highly configurable, next generation window manager with extensive standards support.</Description>
+        <BuildDependencies>
+            <Dependency>imlib2-devel</Dependency>
+            <Dependency>libSM-devel</Dependency>
+            <Dependency>libXcursor-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
+            <Dependency>startup-notification-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="6573516107f8cdb83842aac25a430e3f9f966bad" type="targz">http://sourceforge.net/projects/openbox.mirror/files/openbox-3.5.2.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>openbox</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-12-01</Date>
+            <Version>3.5.2</Version>
+            <Comment>Initial Build</Comment>
+            <Name>Ganesh</Name>
+            <Email>iyer.gb.linux@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->
