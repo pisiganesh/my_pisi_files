@@ -9,6 +9,7 @@ from pisi.actionsapi import scons
 # if pisi can't find source directory, see /var/pisi/MyPaint/work/ and:
 # WorkDir="MyPaint-"+ get.srcVERSION() +"/sub_project_dir/"
 
+
 def build():
     scons.make()
 

@@ -28,12 +28,13 @@
     <Package>
         <Name>MyPaint</Name>
         <Files>
-            <Path fileType="all">/</Path>
+            <Path fileType="executable">/bin/*</Path>
+            <Path fileType="header">/include/*</Path>
+            <Path fileType="library">/lib/*</Path>
+            <Path fileType="data">/lib/pkgconfig/*</Path>
+            <Path fileType="data">/share/*</Path>
+            <Path fileType="localedata">/share/locale/*</Path>
         </Files>
-        <AdditionalFiles>
-            <AdditionalFile target="/usr/share/applications/mypaint.desktop" permission="0644" group="root" owner="root">mypaint.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/pixmaps/mypaint.svg" permission="0644" group="root" owner="root">mypaint.svg</AdditionalFile>
-        </AdditionalFiles>
     </Package>
     <History>
         <Update release="1">
