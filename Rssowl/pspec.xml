@@ -16,12 +16,29 @@
     <Package>
         <Name>Rssowl</Name>
         <Files>
-            <Path fileType="all">/</Path>
+            <Path fileType="data">/opt/*</Path>
+            <Path fileType="data">/usr/*</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/rssowl.desktop" permission="0644" group="root" owner="root">rssowl.desktop</AdditionalFile>
             <AdditionalFile target="/usr/share/pixmaps/rssowl.xpm" permission="0644" group="root" owner="root">rssowl.xpm</AdditionalFile>
         </AdditionalFiles>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libIDL</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>pixman</Dependency>
+            <Dependency>startup-notification</Dependency>
+        </RuntimeDependencies>
     </Package>
     <History>
         <Update release="1">

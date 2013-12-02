@@ -17,14 +17,27 @@ If you’re not sure exactly where a program is listed, instead of browsing thro
         <BuildDependencies>
             <Dependency>exo-devel</Dependency>
             <Dependency>garcon-devel</Dependency>
+            <Dependency>rpm2targz</Dependency>
             <Dependency>xfce4-panel-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="5bf5cd3f10e3cbaf5f330c2ac3bcef04929a6556" type="tarbz2">/home/ganesh/pisi_packages/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin-1.2.1-src.tar.bz2</Archive>
+        <Archive sha1sum="a0f6868ed6e8c68e0a6d95386bd878b145b7a819" type="binary">ftp://rpmfind.net/linux/fedora-secondary/development/rawhide/source/SRPMS/x/xfce4-whiskermenu-plugin-1.1.1-1.fc21.src.rpm</Archive>
     </Source>
     <Package>
         <Name>xfce4-whiskermenu-plugin</Name>
+        <RuntimeDependencies>
+            <Dependency>cairo</Dependency>
+            <Dependency>exo</Dependency>
+            <Dependency>garcon</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libxfce4ui</Dependency>
+            <Dependency>libxfce4util</Dependency>
+            <Dependency>xfce4-panel</Dependency>
+        </RuntimeDependencies>
         <Files>
-            <Path fileType="all">/</Path>
+            <Path fileType="executable">/usr/bin/*</Path>
+            <Path fileType="library">/usr/lib64/*</Path>
+            <Path fileType="data">/usr/share/*</Path>
+            <Path fileType="localedata">/usr/share/locale/*</Path>
         </Files>
     </Package>
     <History>

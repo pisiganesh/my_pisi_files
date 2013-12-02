@@ -21,8 +21,14 @@
     </Source>
     <Package>
         <Name>RoboJournal</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>qt-webkit</Dependency>
+        </RuntimeDependencies>
         <Files>
-            <Path fileType="all">/</Path>
+            <Path fileType="executable">/usr/local/*</Path>
+            <Path fileType="data">/usr/share/*</Path>
+            <Path fileType="doc">/usr/share/man/*</Path>
         </Files>
     </Package>
     <History>

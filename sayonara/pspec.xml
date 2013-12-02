@@ -21,12 +21,19 @@ One of Sayonara's goals are intuitive and easy usablility never leading to the i
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>taglib-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="1bdcdc9727830cf629cdc729379ed0ea43db8dd3" type="targz">/home/ganesh/pisi_packages/sayonara/sayonara-player-r695.tar.gz</Archive>
+        <Archive sha1sum="1bdcdc9727830cf629cdc729379ed0ea43db8dd3" type="targz">http://sayonara-player.googlecode.com/files/sayonara-player-r695.tar.gz</Archive>
     </Source>
     <Package>
         <Name>sayonara</Name>
+        <RuntimeDependencies>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>taglib</Dependency>
+        </RuntimeDependencies>
         <Files>
-            <Path fileType="all">/</Path>
+            <Path fileType="executable">/usr/bin/*</Path>
+            <Path fileType="library">/usr/lib/*</Path>
+            <Path fileType="data">/usr/share/*</Path>
         </Files>
     </Package>
     <History>

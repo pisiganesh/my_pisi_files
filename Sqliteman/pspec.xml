@@ -18,9 +18,15 @@
         <Archive sha1sum="ed8e8bd40dfac2bdc106b5e94182602fd6d6bfeb" type="targz">http://sourceforge.net/projects/sqliteman/files/sqliteman/1.2.2/sqliteman-1.2.2.tar.gz</Archive>
     </Source>
     <Package>
-        <Name>Sqlitemanager</Name>
+        <Name>Sqliteman</Name>
+        <RuntimeDependencies>
+            <Dependency>qscintilla2</Dependency>
+            <Dependency>qt</Dependency>
+        </RuntimeDependencies>
         <Files>
-            <Path fileType="all">/</Path>
+            <Path fileType="executable">/usr/bin/*</Path>
+            <Path fileType="data">/usr/share/*</Path>
+            <Path fileType="doc">/usr/share/sqliteman/*</Path>
         </Files>
     </Package>
     <History>
