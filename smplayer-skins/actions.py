@@ -7,14 +7,9 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 #from pisi.actionsapi import pisitools
 
-# if pisi can't find source directory, see /var/pisi/tor/work/ and:
-# WorkDir="tor-"+ get.srcVERSION() +"/sub_project_dir/"
+# if pisi can't find source directory, see /var/pisi/smplayer-skins/work/ and:
+# WorkDir="smplayer-skins-"+ get.srcVERSION() +"/sub_project_dir/"
 
-def setup():
-    autotools.configure("--prefix=/usr --enable-bufferevents --enable-tor2web-mode")
-
-def build():
-    autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
@@ -24,12 +19,12 @@ def install():
 
 # If there is no install rule for a runnable binary, you can 
 # install it to binary directory.
-#    pisitools.dobin("tor")
+#    pisitools.dobin("smplayer-skins")
 
 # You can use these as variables, they will replace GUI values before build.
-# Package Name : tor
-# Version : 2.3.25
-# Summary : Provide anonymity on the Internet.
+# Package Name : smplayer-skins
+# Version : 2013.06.05
+# Summary : Smplayer themes
 
 # For more information, you can look at the Actions API
 # from the Help menu and toolbar.

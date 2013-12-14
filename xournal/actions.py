@@ -7,11 +7,11 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 #from pisi.actionsapi import pisitools
 
-# if pisi can't find source directory, see /var/pisi/tor/work/ and:
-# WorkDir="tor-"+ get.srcVERSION() +"/sub_project_dir/"
+# if pisi can't find source directory, see /var/pisi/xournal/work/ and:
+# WorkDir="xournal-"+ get.srcVERSION() +"/sub_project_dir/"
 
 def setup():
-    autotools.configure("--prefix=/usr --enable-bufferevents --enable-tor2web-mode")
+    autotools.configure("--prefix=/usr")
 
 def build():
     autotools.make()
@@ -24,12 +24,12 @@ def install():
 
 # If there is no install rule for a runnable binary, you can 
 # install it to binary directory.
-#    pisitools.dobin("tor")
+#    pisitools.dobin("xournal")
 
 # You can use these as variables, they will replace GUI values before build.
-# Package Name : tor
-# Version : 2.3.25
-# Summary : Provide anonymity on the Internet.
+# Package Name : xournal
+# Version : 0.4.7
+# Summary : Xournal is an application for notetaking, sketching
 
 # For more information, you can look at the Actions API
 # from the Help menu and toolbar.

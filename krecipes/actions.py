@@ -3,33 +3,32 @@
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/copyleft/gpl.txt
 
-from pisi.actionsapi import autotools
-from pisi.actionsapi import get
+from pisi.actionsapi import kde4
 #from pisi.actionsapi import pisitools
 
-# if pisi can't find source directory, see /var/pisi/tor/work/ and:
-# WorkDir="tor-"+ get.srcVERSION() +"/sub_project_dir/"
+# if pisi can't find source directory, see /var/pisi/krecipes/work/ and:
+# WorkDir="krecipes-"+ get.srcVERSION() +"/sub_project_dir/"
 
 def setup():
-    autotools.configure("--prefix=/usr --enable-bufferevents --enable-tor2web-mode")
+    kde4.configure()
 
 def build():
-    autotools.make()
+    kde4.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    kde4.install()
 
 # Take a look at the source folder for these file as documentation.
 #    pisitools.dodoc("AUTHORS", "BUGS", "ChangeLog", "COPYING", "README")
 
 # If there is no install rule for a runnable binary, you can 
 # install it to binary directory.
-#    pisitools.dobin("tor")
+#    pisitools.dobin("krecipes")
 
 # You can use these as variables, they will replace GUI values before build.
-# Package Name : tor
-# Version : 2.3.25
-# Summary : Provide anonymity on the Internet.
+# Package Name : krecipes
+# Version : 2.0
+# Summary : Manage Your Recipes
 
 # For more information, you can look at the Actions API
 # from the Help menu and toolbar.

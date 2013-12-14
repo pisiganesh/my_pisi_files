@@ -7,11 +7,11 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 #from pisi.actionsapi import pisitools
 
-# if pisi can't find source directory, see /var/pisi/tor/work/ and:
-# WorkDir="tor-"+ get.srcVERSION() +"/sub_project_dir/"
+# if pisi can't find source directory, see /var/pisi/zenity/work/ and:
+# WorkDir="zenity-"+ get.srcVERSION() +"/sub_project_dir/"
 
 def setup():
-    autotools.configure("--prefix=/usr --enable-bufferevents --enable-tor2web-mode")
+    autotools.configure()
 
 def build():
     autotools.make()
@@ -24,12 +24,12 @@ def install():
 
 # If there is no install rule for a runnable binary, you can 
 # install it to binary directory.
-#    pisitools.dobin("tor")
+#    pisitools.dobin("zenity")
 
 # You can use these as variables, they will replace GUI values before build.
-# Package Name : tor
-# Version : 2.3.25
-# Summary : Provide anonymity on the Internet.
+# Package Name : zenity
+# Version : 3.8.0
+# Summary : Zenity is a rewrite of gdialog
 
 # For more information, you can look at the Actions API
 # from the Help menu and toolbar.
